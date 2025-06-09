@@ -156,3 +156,9 @@ C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Release\net8.
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Release\net8.0\PokeTCG.pdb
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Release\net8.0\PokeTCG.genruntimeconfig.cache
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Release\net8.0\ref\PokeTCG.dll
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\web.config
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\appsettings.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\PokeTCG.deps.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\PokeTCG.runtimeconfig.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\publish\PokeTCG.staticwebassets.endpoints.json

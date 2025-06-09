@@ -1,0 +1,11 @@
+[phases.setup]
+nixpkgsArchive = "45a05d2e1bc408048d8b6f8e90fc43d9a9187f29" 
+
+[phases.install]
+cmds = ["dotnet restore"]
+
+[phases.build]
+cmds = ["dotnet publish -c Release -o out"]
+
+[phases.start]
+cmd = "dotnet out/PokeTCG.dll"

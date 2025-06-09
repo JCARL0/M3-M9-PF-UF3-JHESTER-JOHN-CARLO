@@ -143,3 +143,16 @@ C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\publish\PokeTCG.deps.json
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\publish\PokeTCG.runtimeconfig.json
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\publish\PokeTCG.staticwebassets.endpoints.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\web.config
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\web.config
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\appsettings.Development.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\appsettings.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\PokeTCG.deps.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\PokeTCG.runtimeconfig.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\PokeTCG.staticwebassets.endpoints.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\appsettings.Development.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\appsettings.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\PokeTCG.deps.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\PokeTCG.runtimeconfig.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\out\out\publish\PokeTCG.staticwebassets.endpoints.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

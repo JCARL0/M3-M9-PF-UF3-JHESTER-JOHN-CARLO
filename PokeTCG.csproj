@@ -15,4 +15,11 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <!-- Ensure tcg.db is included in publish output -->
+  <ItemGroup>
+    <Content Update="App_Data\tcg.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

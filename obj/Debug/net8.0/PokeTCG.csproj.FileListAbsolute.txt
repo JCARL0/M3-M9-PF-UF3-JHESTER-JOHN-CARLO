@@ -143,11 +143,6 @@ C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets\msbuild.PokeTCG.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets\msbuild.build.PokeTCG.props
-C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PokeTCG.props
-C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PokeTCG.props
-C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\scopedcss\bundle\PokeTCG.styles.css
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\scopedcss\projectbundle\PokeTCG.bundle.scp.css
@@ -157,3 +152,13 @@ C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\PokeTCG.pdb
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\PokeTCG.genruntimeconfig.cache
 C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\ref\PokeTCG.dll
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\PokeTCG.sourcelink.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\web.config
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\PokeTCG.deps.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\PokeTCG.runtimeconfig.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\publish\PokeTCG.staticwebassets.endpoints.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\bin\Debug\net8.0\PokeTCG.staticwebassets.endpoints.json
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Jcarl\Desktop\M3-M9-PF-UF3-JHESTER-JOHN-CARLO\PokeTCG\obj\Debug\net8.0\staticwebassets.build.endpoints.json

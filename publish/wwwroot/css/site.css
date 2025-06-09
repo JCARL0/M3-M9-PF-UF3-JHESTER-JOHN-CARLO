@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffef8;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h1, h2, h3 {
+    color: #e0a800;
+}
+
+a {
+    color: #e0a800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border: 1px solid #ffe58f;
+    background-color: #fffde6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #d39e00;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #222;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #f0ad4e;
+    border-color: #ec971f;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.heart-btn {
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.heart-btn:hover {
+    color: red;
+    border-color: red;
+    background-color: #fff5f5;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-actions .btn {
+    flex: 1;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeeba;
+}
+
+.navbar {
+    background-color: #fff3cd;
+    border-bottom: 1px solid #ffeeba;
+}
+
+.nav-link {
+    color: #333 !important;
+}

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokeTCG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e429800ee2e68befff03862b67f57a25d5110025")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc0177bc88c111ecdbde13f69c2c218a67c5ff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokeTCG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokeTCG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

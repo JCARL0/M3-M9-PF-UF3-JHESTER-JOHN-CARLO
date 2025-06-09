@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Type Weakness Chart";
+    ViewBag.HideFooter = true;
+}
+
+<style>
+    .chart-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: #fffde6;
+        border: 1px solid #ffe58f;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .chart-container h1 {
+        color: #d39e00;
+        margin-bottom: 20px;
+    }
+
+    .chart-container img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .btn-back {
+        display: inline-block;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="chart-container">
+    <h1>Type Weakness Chart</h1>
+    <img src="/images/type-weakness-chart.png" alt="Type Weakness Chart" />
+
+    <a href="/" class="btn btn-secondary btn-back">← Back to cards</a>
+</div>

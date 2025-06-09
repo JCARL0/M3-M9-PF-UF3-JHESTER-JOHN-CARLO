@@ -1,0 +1,122 @@
+﻿@model List<PokeTCG.Models.Card>
+@{
+    // Set the title of the page
+    ViewData["Title"] = "PokeTCG Explorer";
+
+    // Retrieve search and filter parameters from the query string
+    string search = Context.Request.Query["search"];
+    string selectedType = Context.Request.Query["type"];
+    string selectedSet = Context.Request.Query["set"];
+    string selectedSeries = Context.Request.Query["series"];
+    string selectedRarity = Context.Request.Query["rarity"];
+
+    // Retrieve filter options from ViewBag, providing empty lists if not set
+    var typeOptions = ViewBag.TypeOptions as List<string> ?? new();
+    var setOptions = ViewBag.SetOptions as List<string> ?? new();
+    var seriesOptions = ViewBag.SeriesOptions as List<string> ?? new();
+    var rarityOptions = ViewBag.RarityOptions as List<string> ?? new();
+}
+
+<h1 class="mb-4">Pokémon TCG Cards</h1>
+
+<form method="get" class="d-flex flex-wrap align-items-end gap-3 mb-4">
+
+    <div class="form-group">
+        <label for="search">Name</label>
+        <input type="text" name="search" id="search" class="form-control" placeholder="Search name..."
+               value="@search" />
+    </div>
+
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type" id="type" class="form-control">
+            <option value="">All</option>
+            @foreach (var type in typeOptions)
+            {
+                <option value="@type" selected="@(type == selectedType ? "selected" : null)">@type</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="set">Set</label>
+        <select name="set" id="set" class="form-control">
+            <option value="">All</option>
+            @foreach (var set in setOptions)
+            {
+                <option value="@set" selected="@(set == selectedSet ? "selected" : null)">@set</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="series">Series</label>
+        <select name="series" id="series" class="form-control">
+            <option value="">All</option>
+            @foreach (var series in seriesOptions)
+            {
+                <option value="@series" selected="@(series == selectedSeries ? "selected" : null)">@series</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="rarity">Rarity</label>
+        <select name="rarity" id="rarity" class="form-control">
+            <option value="">All</option>
+            @foreach (var rarity in rarityOptions)
+            {
+                <option value="@rarity" selected="@(rarity == selectedRarity ? "selected" : null)">@rarity</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group d-flex gap-2 mt-4">
+        <button type="submit" class="btn btn-primary">Filter</button>
+        <a href="/Home/Index" class="btn btn-secondary">Clear Filters</a>
+    </div>
+</form>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        @foreach (var card in Model)
+        {
+            <div class="card" style="width: 18rem; margin:10px">
+                <img src="@card.Images.Small" class="card-img-top" alt="@card.Name" />
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title">@card.Name</h5>
+                        <p>Type: @string.Join(", ", card.Types ?? new List<string>())</p>
+                        <p>Rarity: @card.Rarity</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn heart-btn"
+                                onclick="addToFavorites('@card.Id', '@card.Name', '@card.Images.Small', '@card.Rarity', '@(card.Types?.FirstOrDefault())')">
+                            ❤
+                        </button>
+                        <a href="/Home/Details/@card.Id" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">No cards found.</div>
+}
+
+@section Scripts {
+<script>
+    // JavaScript function to add a card to favorites
+    function addToFavorites(cardId, name, imageUrl, rarity, type) {
+        fetch('/Home/AddToFavorites', {
+            method: 'POST', // HTTP POST request
+            headers: { 'Content-Type': 'application/json' }, // Set content type to JSON
+            // Send card details as JSON in the request body
+            body: JSON.stringify({ CardId: cardId, Name: name, ImageUrl: imageUrl, Rarity: rarity, Type: type })
+        }).then(() => alert("Added to favorites")); // Show an alert upon successful addition
+    }
+</script>
+}

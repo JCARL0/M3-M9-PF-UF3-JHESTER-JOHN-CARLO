@@ -1,0 +1,37 @@
+@model List<PokeTCG.Models.Favorite> // Specifies that this view expects a list of Favorite objects
+@{
+    ViewData["Title"] = "My Favorites"; // Sets the title for the browser tab/window
+}
+
+<h1 class="mb-4">Favorites</h1> @if (Model.Any()) // Checks if there are any favorite cards in the model
+{
+    <div class="row"> @foreach (var fav in Model) // Loops through each favorite card
+        {
+            <div class="card" style="width: 18rem; margin:10px"> <img src="@fav.ImageUrl" class="card-img-top" alt="@fav.Name" /> <div class="card-body d-flex flex-column justify-content-between"> <div>
+                        <h5 class="card-title">@fav.Name</h5> <p>Type: @fav.Type</p> <p>Rarity: @fav.Rarity</p> </div>
+                    <div class="card-actions"> <button class="btn heart-btn"
+                                onclick="removeFavorite(@fav.Id)"> ✖ </button>
+                        <a href="/Home/Details/@fav.CardId" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else // If there are no favorite cards
+{
+    <div class="alert alert-warning">No favorites added yet.</div> }
+
+@section Scripts { // Section for page-specific JavaScript
+<script>
+    // JavaScript function to remove a favorite card
+    function removeFavorite(id) {
+        // Uses Fetch API to send a POST request to the server
+        fetch('/Home/RemoveFavorite', {
+            method: 'POST', // HTTP method
+            headers: { 'Content-Type': 'application/json' }, // Specify content type as JSON
+            body: JSON.stringify(id) // Send the card ID as a JSON string in the request body
+        }).then(() => location.reload()); // After successful removal, reload the page to update the list
+    }
+</script>
+}

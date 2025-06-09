@@ -1,0 +1,100 @@
+@model PokeTCG.Models.Card
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Card Details";
+    ViewBag.HideFooter = true;
+}
+
+<style>
+    .card-detail {
+        max-width: 600px;
+        margin: 30px auto;
+        background-color: #fffde6;
+        border: 1px solid #ffe58f;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card-detail h1 {
+        color: #d39e00;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .card-detail img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .detail-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .detail-list li {
+        padding: 6px 0;
+        border-bottom: 1px solid #ffe8a1;
+    }
+
+    .detail-list li strong {
+        width: 120px;
+        display: inline-block;
+        color: #856404;
+    }
+
+    .attack-list {
+        list-style: disc;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .attack-list li {
+        margin-bottom: 8px;
+    }
+
+    .btn-back {
+        display: block;
+        margin: 20px auto 0;
+        width: fit-content;
+    }
+</style>
+
+<div class="card-detail">
+    <h1>@Model.Name</h1>
+    <img src="@Model.Images.Large" alt="@Model.Name" />
+
+    <ul class="detail-list">
+        <li><strong>Type:</strong> @string.Join(", ", Model.Types ?? new())</li>
+        <li><strong>Subtype:</strong> @string.Join(", ", Model.Subtypes ?? new())</li> <!-- ✅ Correct -->
+        <li><strong>Supertype:</strong> @Model.Supertype</li>
+        <li><strong>Set:</strong> @Model.Set?.Name</li>
+        <li><strong>Series:</strong> @Model.Set?.Series</li>
+        <li><strong>Rarity:</strong> @Model.Rarity</li>
+    </ul>
+
+    <h4>Attacks:</h4>
+    @if (Model.Attacks != null && Model.Attacks.Any())
+    {
+        <ul class="attack-list">
+            @foreach (var attack in Model.Attacks)
+            {
+                <li>
+                    <strong>@attack.Name</strong>:
+                    @(!string.IsNullOrWhiteSpace(attack.Text) ? attack.Text + " " : "")
+                    @(!string.IsNullOrWhiteSpace(attack.Damage) ? "- " + attack.Damage : "")
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No attacks listed.</p>
+    }
+
+    <a href="/" class="btn btn-secondary btn-back">← Back to cards</a>
+</div>
